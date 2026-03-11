@@ -1,20 +1,18 @@
 @font-face{
     font-family: 'fira';
-    font-display: swap;
     src: url('../font/FiraCode-Regular.ttf') format("truetype");
 }
 @font-face{
     font-family: 'sans';
-    font-display: swap;
     src: url('../font/NotoSansSC-Regular.ttf') format("truetype");
 }
+
 body {
   font-family: 'sans';
-  font-size: 15px;
+  font-size: 20px;
 }
 
-/* 设置代码字体 */
 code, pre {
   font-family: 'fira';
-  font-size: 15px;
+  font-size: 20px;
 }
