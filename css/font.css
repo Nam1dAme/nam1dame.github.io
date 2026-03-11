@@ -9,5 +9,12 @@
     src: url('../font/NotoSansSC-Regular.ttf') format("truetype");
 }
 body {
-    font-family: 'sans';
+  font-family: 'sans';
+  font-size: 15px;
+}
+
+/* 设置代码字体 */
+code, pre {
+  font-family: 'fira';
+  font-size: 15px;
 }
