@@ -1,18 +1,18 @@
 @font-face{
-    font-family: 'fira';
+    font-family: 'FiraCode';
     src: url('../font/FiraCode-Regular.ttf') format("truetype");
 }
 @font-face{
-    font-family: 'sans';
+    font-family: 'NotoSansSC';
     src: url('../font/NotoSansSC-Regular.ttf') format("truetype");
 }
 
 body {
-  font-family: 'sans';
-  font-size: 20px;
+  font-family: 'NotoSansSC';
+  font-size: 15px;
 }
 
 code, pre {
-  font-family: 'fira';
-  font-size: 20px;
+  font-family: 'FiraCode';
+  font-size: 15px;
 }
