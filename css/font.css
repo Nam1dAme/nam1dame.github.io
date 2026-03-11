@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'fira';
+    font-display: swap;
+    src: url('../font/FiraCode-Regular.ttf') format("truetype");
+}
+@font-face{
+    font-family: 'sans';
+    font-display: swap;
+    src: url('../font/NotoSansSC-Regular.ttf') format("truetype");
+}
+body {
+    font-family: 'fira','sans';
+}
