@@ -6,13 +6,16 @@
     font-family: 'NotoSansSC';
     src: url('../font/NotoSansSC-Regular.ttf') format("truetype");
 }
-
+@font-face{
+    font-family: 'JetBrainsMono';
+    src: url('../font/JetBrainsMono-Regular.ttf') format("truetype");
+}
 body {
   font-family: 'NotoSansSC';
   font-size: 15px;
 }
 
 code {
-  font-family: 'FiraCode';
+  font-family: 'JetBrainsMono','FiraCode';
   font-size: 15px;
 }
