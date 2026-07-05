@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>BUPT 软工生存指北-大一篇 | Nam1dAme的笔记</title><meta name="author" content="Nam1dAme"><meta name="copyright" content="Nam1dAme"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="期末终于考完了，终于有时间更新，于是准备写一个新系列。这个系列灵感来自计科学长 xqmmcqs 的博客，希望能作为后人的参考的同时，也是对我学习生活的记录。不过说实话，我并不是多么有上进心的人，很多观点也只是来自一个后 50% 的摆子的视角，我也不知道有多大的参考价值。 大一上    大一上的课其实全校都差逑不多，不同专业之间的经验也能相互借鉴。  计算导论与程序设计   实际上的这门课应该叫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BUPT 软工生存指北-大一篇">
+<meta property="og:url" content="http://nam1dame.github.io/2026/07/04/SE-guide-1/index.html">
+<meta property="og:site_name" content="Nam1dAme的笔记">
+<meta property="og:description" content="期末终于考完了，终于有时间更新，于是准备写一个新系列。这个系列灵感来自计科学长 xqmmcqs 的博客，希望能作为后人的参考的同时，也是对我学习生活的记录。不过说实话，我并不是多么有上进心的人，很多观点也只是来自一个后 50% 的摆子的视角，我也不知道有多大的参考价值。 大一上    大一上的课其实全校都差逑不多，不同专业之间的经验也能相互借鉴。  计算导论与程序设计   实际上的这门课应该叫">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://nam1dame.github.io/myImage/avatar2.jpg">
+<meta property="article:published_time" content="2026-07-03T21:27:04.000Z">
+<meta property="article:modified_time" content="2026-07-05T08:22:03.549Z">
+<meta property="article:author" content="Nam1dAme">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://nam1dame.github.io/myImage/avatar2.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "BUPT 软工生存指北-大一篇",
+  "url": "http://nam1dame.github.io/2026/07/04/SE-guide-1/",
+  "image": "http://nam1dame.github.io/myImage/avatar2.jpg",
+  "datePublished": "2026-07-03T21:27:04.000Z",
+  "dateModified": "2026-07-05T08:22:03.549Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Nam1dAme",
+      "url": "http://nam1dame.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/myImage/cloud-showers-heavy-solid.png"><link rel="canonical" href="http://nam1dame.github.io/2026/07/04/SE-guide-1/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'BUPT 软工生存指北-大一篇',
+  isHighlightShrink: undefined,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/font.css"><meta name="generator" content="Hexo 8.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/myImage/avatar2.jpg" onerror="this.onerror=null;this.src='/myImage/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/myImage/default_top_img_low.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Nam1dAme的笔记</span></a><a class="nav-page-title" href="/"><span class="site-name">BUPT 软工生存指北-大一篇</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">BUPT 软工生存指北-大一篇</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-07-03T21:27:04.000Z" title="发表于 2026-07-04 05:27:04">2026-07-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-07-05T08:22:03.549Z" title="更新于 2026-07-05 16:22:03">2026-07-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/study/">study</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>  期末终于考完了，终于有时间更新，于是准备写一个新系列。这个系列灵感来自计科学长 <a target="_blank" rel="noopener" href="https://blog.xqmmcqs.com/BUPT%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B1%BB%E5%A4%A7%E4%BA%8C%E4%B8%8A%E7%94%9F%E5%AD%98%E6%8C%87%E5%8C%97/"><strong>xqmmcqs</strong> 的博客</a>，希望能作为后人的参考的同时，也是对我学习生活的记录。不过说实话，我并不是多么有上进心的人，很多观点也只是来自一个后 50% 的摆子的视角，我也不知道有多大的参考价值。</p>
+<h1>大一上</h1>
+<blockquote>
+<p>  大一上的课其实全校都差逑不多，不同专业之间的经验也能相互借鉴。</p>
+</blockquote>
+<h2 id="计算导论与程序设计">计算导论与程序设计</h2>
+<p>  实际上的这门课应该叫 C 语言程序设计，教学内容并没有什么特殊的。值得一提的是本专业祖传的<strong>画板实验</strong>，大概内容就是用 C 语言和 EGE 图形库制作一个画板程序，在 AI 编程工具高度发达的今天，完成起来可以说轻而易举。期末考试是闭卷笔试，试题多来自作业习题，尤其是手写代码的编程题，会考作业原题。</p>
+<h2 id="数学课">数学课</h2>
+<p>  高数 / 数分的学分很大，想追求绩点的一定要好好学，网上也有大把网课资源，认真做做往年题就不成问题。线性代数可能比较难以理解，但实际教学仍以做题为主，期末题型也比较固定。推荐使用 fa_555 学长制作的<a target="_blank" rel="noopener" href="https://github.com/ArtveFlinaInBupt/bump-archive"><strong>大邮数学集</strong></a>，其中收录整理了大量往年真题资源，包括但不限于数分、线代、概率论等课程。</p>
+<h2 id="软工专业导论">软工专业导论</h2>
+<p>  主要介绍了一些软件工程基础知识，以及一些简单的计组、数据结构和关系代数。因为是开卷，并不需要太大精力复习，不过我们这届上的时候还没有教材，只能打印课件。大题考了进制转换和关系代数，几乎是作业原题，总的来说比较水，但如果全靠开卷现学的话比较难，推荐做些准备。实验部分，一共有 4 次实验，学校会发一箱实验套件，使用 Arduino 进行开发，现在有 AI 的帮助不算多难。</p>
+<h2 id="信息通信概论">信息通信概论</h2>
+<p>  24 级新开的课，当时没有教材，没有往年题，知识点乱七八糟，体验极差。主要介绍了信息通信相关的基础知识和历史，印象里考试考了香农三大定律和一道作业原题的计算题。推荐陈艾斯学长制作的<a target="_blank" rel="noopener" href="https://github.com/Acechann/BUPT"><strong>信通概论复习资料</strong></a>。</p>
+<h1>大一下</h1>
+<blockquote>
+<p>  目前最让我难受的一学期，也是拉低我均分的最大元凶，说不定是我一切痛苦的根源。高学分课扎堆且难以速通，要追求高绩点就可劲儿造吧。</p>
+</blockquote>
+<h2 id="数分下">数分下</h2>
+<p>  <strong>那场数分毁了我的保研梦</strong>。6 学分的数分下应该是本科学分最高的课程，无论是卷绩点还是不挂科都得好好准备。善用 AI 工具帮助做题和理解。</p>
+<h2 id="大学物理-D">大学物理 D</h2>
+<p>  软工专业学的是 4 学分大物 D，是比较简单的一档，可以说就是高中物理 + 微积分，然而对我这一数理苦手来说非常折磨。最痛苦的是大物和离散几乎是连着考的，时间紧任务重，最后都不怎么高。推荐面向例题和习题复习，上课用的大物教材也有对应的习题解析。</p>
+<h2 id="离散数学">离散数学</h2>
+<p>  最阴的来了。5 学分的离散一学期学完，十几章的教材巨厚一本，知识点多且杂，囊括了集合论、数论、图论、抽象代数等。作业习题的参考答案不全，考试会考作业原题，不过当初考试的难度比预想的低，虽然我不会做。对于离散我确实没有什么复习建议，其他学院考的和软工也不一样，而且期末最后两道抽象代数大题我甚至没写，没想到期末居然及格了。顺带一提，<strong>BYR Docs</strong> 上有我记录并整理的软工 24 级<a target="_blank" rel="noopener" href="https://byrdocs.org/files/619c4e7d27c2b9ac61561d97e95b2e4f.pdf?filename=2024-2025+%E7%AC%AC%E4%BA%8C%E5%AD%A6%E6%9C%9F+%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6+%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7.pdf&amp;f=1"><strong>离散期末真题</strong></a>。</p>
+<h2 id="数字系统基础">数字系统基础</h2>
+<p>  也叫数电，是唯一一个我几乎完全没学明白的课，到期末了也只会画个卡诺图。期末的大题基本都是乱写的，说实话我给不出什么建议，而且这课没多少往年题，但是选择题意外的很简单。听说 25 级开始数电还加了实验。网上速通课应该不少，但我觉得没那么好速通。</p>
+<h2 id="人工智能引论">人工智能引论</h2>
+<p>  开卷，内容是 AI 基础知识。有一个 3 人组队的实验，内容大概是对鸢尾花数据集构造决策树并评估。期末虽然是开卷，但很多内容在书上找不到，最好打印课件。</p>
+<h2 id="C-程序设计（选修）by-崔毅东">C++程序设计（选修）by 崔毅东</h2>
+<p>  软工会在第 2 学期到第 5 学期各开一门程序设计课，分别为 C++、Java、Python 和 C#，要求至少选修其中一个。理论内容是 C++ 语法和面向对象，实验内容不同于计导可以自己选，选项有画板、俄罗斯方块和自选实验，前两个必须使用 EGE 图形库，自选实验可以自己设计，要求难度不能低于前两者，相应地可以得到更高的分数。期末是一个大作业，发一套题自己做，在指定时间之前提交。说实话，没必要在课特别多的大一下选修 C++，因为大二上的课非常少，完全可以等到大二上选 Java。</p>
+<h2 id="公众英语表达与沟通（选修）by-林旭">公众英语表达与沟通（选修）by 林旭</h2>
+<p>  英语选修的体验<strong>很大程度上取决于老师</strong>而非课程本身。没有签到，作业很少，主要以小组形式完成，但事实上并不需要小组合作，一个小组每周派一人单独完成足矣，比如分析一段演讲稿。有意思的是，作业次数其实小于小组人数，也就是说有概率一学期都没有作业。主要考核方式是期中期末两次演讲，由于人数较多，每个人的期中期末会有一次<strong>现场演讲</strong>和一场<strong>录视频演讲</strong>，如果期中是现场演讲的话期末就是录视频了。不管现场还是录视频，都需要自己制作 PPT，原则上不能念稿或念 PPT，但实际上管的没有这么严，我的现场演讲就有一大半是念稿。别的老师可能会要求 PPT 一页不能超过 5 个单词。</p>
+<h2 id="计算机实习">计算机实习</h2>
+<p>  小学期实验，不过 25 级将其放在教学周了。内容大概是拆装机、给网线装水晶头、装系统和企业参观，完事了写实验报告。其中<strong>拆装机</strong>和<strong>水晶头</strong>是按照<strong>验收先后顺序</strong>给分的，越早验收分越高，拆装机要求能开机点亮显示器，水晶头要求能在测试仪器上连通，实际上可以拿前人的圣遗物或者成品直接去验收，不过自己做一遍也不难。<strong>装系统</strong>可以给虚拟机装，Windows 或者 Linux 都行，验收的时候会在一个大教室从前往后一个个检查，想早点验收完就坐前排吧。验收要求演示装好的系统，并说几个装系统的过程中遇到的问题。最后写报告的时候要附上截图，记得装的过程中留痕。<strong>企业参观</strong>没什么好说的，统一坐班车去联想的产业园跟着逛就行了，事后写报告。</p>
+<h1>后记</h1>
+<p>  大一的学分真的很多，两学期加起来有 60 多，而大二上的学分只有 15.4 分，虽然是只选了最低限度的选修的情况下。想靠大二的成绩拉均分是很难的，建议所有想卷绩点的同学把握好大一。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://nam1dame.github.io">Nam1dAme</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://nam1dame.github.io/2026/07/04/SE-guide-1/">http://nam1dame.github.io/2026/07/04/SE-guide-1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://nam1dame.github.io" target="_blank">Nam1dAme的笔记</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><div class="post-share"><div class="social-share" data-image="/myImage/avatar2.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/06/14/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9406/" title="音乐随笔06 - Nott &amp; NYPAO 马六"><img class="cover" src="/2026/06/14/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9406/Nott.jpg" onerror="onerror=null;src='/myImage/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">音乐随笔06 - Nott & NYPAO 马六</div></div><div class="info-2"><div class="info-item-1">伟大的现场，伟大的马勒。</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/myImage/avatar2.jpg" onerror="this.onerror=null;this.src='/myImage/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Nam1dAme</div><div class="author-info-description">那里泪如雨下</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Nam1dAme" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:nam1dame765@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">不足为外人道也。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">大一上</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E5%AF%BC%E8%AE%BA%E4%B8%8E%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.1.</span> <span class="toc-text">计算导论与程序设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E8%AF%BE"><span class="toc-number">1.2.</span> <span class="toc-text">数学课</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E5%B7%A5%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA"><span class="toc-number">1.3.</span> <span class="toc-text">软工专业导论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E9%80%9A%E4%BF%A1%E6%A6%82%E8%AE%BA"><span class="toc-number">1.4.</span> <span class="toc-text">信息通信概论</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">大一下</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%88%86%E4%B8%8B"><span class="toc-number">2.1.</span> <span class="toc-text">数分下</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-D"><span class="toc-number">2.2.</span> <span class="toc-text">大学物理 D</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6"><span class="toc-number">2.3.</span> <span class="toc-text">离散数学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80"><span class="toc-number">2.4.</span> <span class="toc-text">数字系统基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%95%E8%AE%BA"><span class="toc-number">2.5.</span> <span class="toc-text">人工智能引论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E9%80%89%E4%BF%AE%EF%BC%89by-%E5%B4%94%E6%AF%85%E4%B8%9C"><span class="toc-number">2.6.</span> <span class="toc-text">C++程序设计（选修）by 崔毅东</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AC%E4%BC%97%E8%8B%B1%E8%AF%AD%E8%A1%A8%E8%BE%BE%E4%B8%8E%E6%B2%9F%E9%80%9A%EF%BC%88%E9%80%89%E4%BF%AE%EF%BC%89by-%E6%9E%97%E6%97%AD"><span class="toc-number">2.7.</span> <span class="toc-text">公众英语表达与沟通（选修）by 林旭</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%9E%E4%B9%A0"><span class="toc-number">2.8.</span> <span class="toc-text">计算机实习</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">后记</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/04/SE-guide-1/" title="BUPT 软工生存指北-大一篇">BUPT 软工生存指北-大一篇</a><time datetime="2026-07-03T21:27:04.000Z" title="发表于 2026-07-04 05:27:04">2026-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/14/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9406/" title="音乐随笔06 - Nott &amp; NYPAO 马六"><img src="/2026/06/14/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9406/Nott.jpg" onerror="this.onerror=null;this.src='/myImage/404.jpg'" alt="音乐随笔06 - Nott &amp; NYPAO 马六"/></a><div class="content"><a class="title" href="/2026/06/14/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9406/" title="音乐随笔06 - Nott &amp; NYPAO 马六">音乐随笔06 - Nott &amp; NYPAO 马六</a><time datetime="2026-06-13T20:23:53.000Z" title="发表于 2026-06-14 04:23:53">2026-06-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/05/03/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9405/" title="音乐随笔05 - 浅谈玛祖卡"><img src="/2026/05/03/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9405/Friedman.jpg" onerror="this.onerror=null;this.src='/myImage/404.jpg'" alt="音乐随笔05 - 浅谈玛祖卡"/></a><div class="content"><a class="title" href="/2026/05/03/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9405/" title="音乐随笔05 - 浅谈玛祖卡">音乐随笔05 - 浅谈玛祖卡</a><time datetime="2026-05-02T23:46:26.000Z" title="发表于 2026-05-03 07:46:26">2026-05-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/04/19/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9404/" title="音乐随笔04 - 记录两场音乐会"><img src="/2026/04/19/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9404/Yulong&amp;Buchbinder.jpg" onerror="this.onerror=null;this.src='/myImage/404.jpg'" alt="音乐随笔04 - 记录两场音乐会"/></a><div class="content"><a class="title" href="/2026/04/19/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9404/" title="音乐随笔04 - 记录两场音乐会">音乐随笔04 - 记录两场音乐会</a><time datetime="2026-04-19T12:40:55.000Z" title="发表于 2026-04-19 20:40:55">2026-04-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/04/02/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9403/" title="音乐随笔03 - 夜听巴赫"><img src="/2026/04/02/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9403/bach.png" onerror="this.onerror=null;this.src='/myImage/404.jpg'" alt="音乐随笔03 - 夜听巴赫"/></a><div class="content"><a class="title" href="/2026/04/02/%E9%9F%B3%E4%B9%90%E9%9A%8F%E7%AC%9403/" title="音乐随笔03 - 夜听巴赫">音乐随笔03 - 夜听巴赫</a><time datetime="2026-04-01T17:42:53.000Z" title="发表于 2026-04-02 01:42:53">2026-04-02</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/myImage/default_footer_img.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By Nam1dAme</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script>var meting_api = 'https://met.liiiu.cn/meting/api?server=:server&type=:type&id=:id&r=:r';</script><div class="aplayer no-destroy" data-id="17763997602" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      false
+        ? pjax.loadUrl('/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})</script></div></body></html>
